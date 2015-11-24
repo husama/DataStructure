@@ -1,6 +1,6 @@
 #ifndef HEAP_H_INCLUDED
 #define HEAP_H_INCLUDED
-#define MINDATA
+
 #include <iostream>
 using namespace std;
 template <class T>
