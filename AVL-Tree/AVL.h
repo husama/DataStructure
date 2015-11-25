@@ -29,13 +29,13 @@ public:
 	void LevelOrder();//层次遍历;
 	void InOrder();//中序遍历
 private:
-	TreeNode<ElementType> * root;
-	TreeNode<ElementType> *FindMin(TreeNode<ElementType> *t);
-	int Height(TreeNode<ElementType> *t);//t指向的树的层数(高度)
-	TreeNode<ElementType> *SingleRotateWithLeft(TreeNode<ElementType> *t);//单旋转(左)
-	TreeNode<ElementType> *DoubleRotateWithLeft(TreeNode<ElementType> *t);//双旋转(左)
+    TreeNode<ElementType> * root;
+    TreeNode<ElementType> *FindMin(TreeNode<ElementType> *t);
+    int Height(TreeNode<ElementType> *t);//t指向的树的层数(高度)
+    TreeNode<ElementType> *SingleRotateWithLeft(TreeNode<ElementType> *t);//单旋转(左)
+    TreeNode<ElementType> *DoubleRotateWithLeft(TreeNode<ElementType> *t);//双旋转(左)
     TreeNode<ElementType> *SingleRotateWithRight(TreeNode<ElementType> *t);//单旋转(右)
-	TreeNode<ElementType> *DoubleRotateWithRight(TreeNode<ElementType> *t);//双旋转(右)
+    TreeNode<ElementType> *DoubleRotateWithRight(TreeNode<ElementType> *t);//双旋转(右)
     TreeNode<ElementType> *_Insert(ElementType val, TreeNode<ElementType> *t);//封装AVL树的Insert操作
     TreeNode<ElementType> *_Delete(ElementType val, TreeNode<ElementType> *t);//封装AVL树的Delete操作
     void MakeEmpty(TreeNode<ElementType> *t);
