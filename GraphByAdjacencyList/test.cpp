@@ -78,14 +78,24 @@ int main()
         case 5:
             cout<<"请输入您想要从何处开始深度优先遍历: ";
             cin>>from;
-            g.DepthFirstSearch(from);
-            cout<<endl;
+            if (g.numOfVertex(from) == -1)
+                cout<<"无此结点"<<endl;
+            else
+            {
+                g.DepthFirstSearch(from);
+                cout<<endl;
+            }
             break;
         case 6:
             cout<<"请输入您想要从何处开始广度优先遍历: ";
             cin>>from;
-            g.BreadthFirstSearch(from);
-            cout<<endl;
+            if (g.numOfVertex(from) == -1)
+                cout<<"无此结点"<<endl;
+            else
+            {
+                g.BreadthFirstSearch(from);
+                cout<<endl;
+            }
             break;
         case 7:
             cout<<"自由树的直径为："<<g.shortest()<<endl;
