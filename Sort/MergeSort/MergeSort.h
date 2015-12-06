@@ -45,20 +45,20 @@ void Merge( T *A , int p, int q, int r)
 }
 
 template <class T>
-void MSort(T *A , int Begin, int n)
+void MSort(T *A , int Begin, int End)
 {
-    if ( Begin <  n)
+    if ( Begin <  End)
     {
-        int mid = (Begin+n)/2;
+        int mid = (Begin+End)/2;
         MSort(A,Begin,mid);
-        MSort(A,mid+1,n);
-        Merge(A,Begin,mid,n);
+        MSort(A,mid+1,End);
+        Merge(A,Begin,mid,End);
     }
 }
 
 template <class T>
 void MergeSort(T *A, int n)
 {
-    MSort(A,0,n);
+    MSort(A,0,n-1);
 }
 #endif // MERGESORT_H_INCLUDED
