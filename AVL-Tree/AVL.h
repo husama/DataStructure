@@ -46,7 +46,7 @@ private:
 template<class ElementType>
 void AVL<ElementType>::MakeEmpty(TreeNode<ElementType> *t)
 {
-	if ( t !=NULL)
+    if ( t !=NULL)
     {
         MakeEmpty(t->left);
         MakeEmpty(t->right);
